@@ -185,7 +185,7 @@ span{
     font-size: 34px;
     font-weight: 600;
     min-width: 280px;
-    position: relative; /* Added */
+    position: relative; 
 }
 
 .text-animation span {
@@ -206,7 +206,7 @@ span{
     height: 100%;
     border-left: 3px solid var(--background-color);
     right: -8px;
-    animation: cursor 0.6s infinite, typing 20s steps(14) infinite; /* Removed space */
+    animation: cursor 0.6s infinite, typing 20s steps(14) infinite; 
 }
 
 @keyframes cursor {
@@ -217,10 +217,10 @@ span{
 
 @keyframes words {
     0%, 30% {
-        content: "frontend designer"; /* Lowercase 'content' */
+        content: "frontend designer"; 
     }
     31%, 60% {
-        content: "Web Designer"; /* Lowercase 'content' */
+        content: "Web Designer"; 
     }
     61%, 80% {
         content: "Web Developer";
@@ -580,29 +580,33 @@ body {
         padding: 2rem 3%;
     }
 }
+/* General Styles for Home Section */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Added to handle smaller screens */
+    gap: 2rem; /* Adjust gap for smaller screens */
+}
 
-@media (max-width: 1024px) and (orientation: portrait) {
-    .header {
-        padding: 2rem 5%;
+/* Large screens (laptops/desktops) */
+@media (min-width: 1024px) {
+    .home {
+        gap: 15rem; /* Original gap for larger screens */
     }
     .home-content h3 {
-        font-size: 2.8rem;
+        font-size: 3.5rem;
     }
     .home-content h1 {
-        font-size: 6rem;
+        font-size: 7rem;
     }
     .home-img img {
-        width: 60vw;
-    }
-    .services-container {
-        grid-template-columns: repeat(1, 1fr);
+        width: 32vw; /* Adjust as needed */
     }
 }
 
+/* Tablets and small laptops (landscape mode) */
 @media (max-width: 1024px) and (orientation: landscape) {
-    .header {
-        padding: 2rem 5%;
-    }
     .home-content h3 {
         font-size: 2.8rem;
     }
@@ -610,20 +614,25 @@ body {
         font-size: 6rem;
     }
     .home-img img {
-        width: 55vw;
-    }
-    .services-container {
-        grid-template-columns: repeat(1, 1fr);
+        width: 55vw; /* Slightly larger image width */
     }
 }
 
-@media(max-width: 768px) {
-    .header {
-        padding: 1.5rem 3%;
+/* Tablets and small laptops (portrait mode) */
+@media (max-width: 1024px) and (orientation: portrait) {
+    .home-content h3 {
+        font-size: 2.8rem;
     }
-    .navbar {
-        width: 70%;
+    .home-content h1 {
+        font-size: 6rem;
     }
+    .home-img img {
+        width: 60vw; /* Adjust image width */
+    }
+}
+
+/* Small screens (phones) */
+@media (max-width: 768px) {
     .home-content h3 {
         font-size: 2.4rem;
     }
@@ -631,21 +640,12 @@ body {
         font-size: 5rem;
     }
     .home-img img {
-        width: 70vw;
-    }
-    .services-container {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .contact form {
-        padding: 1rem;
+        width: 70vw; /* Adjust image width for small screens */
     }
 }
 
-
-@media (max-width: 600px) and (orientation: portrait) {
-    .header {
-        padding: 1rem 2%;
-    }
+/* Extra small screens (phones in portrait mode) */
+@media (max-width: 600px) {
     .home-content h3 {
         font-size: 2.2rem;
     }
@@ -653,21 +653,12 @@ body {
         font-size: 4.5rem;
     }
     .home-img img {
-        width: 80vw;
-    }
-    .services-container {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .contact form {
-        padding: 0.5rem;
+        width: 80vw; /* Adjust image width for extra small screens */
     }
 }
 
-
-@media (max-width: 550px) and (orientation: portrait) {
-    .header {
-        padding: 1rem 1%;
-    }
+/* Very small screens (phones in portrait mode) */
+@media (max-width: 480px) {
     .home-content h3 {
         font-size: 2rem;
     }
@@ -675,37 +666,14 @@ body {
         font-size: 4rem;
     }
     .home-img img {
-        width: 90vw;
+        width: 90vw; /* Adjust image width for very small screens */
     }
-    .services-container {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .contact form {
-        padding: 0.5rem;
+    .home {
+        gap: 1rem; /* Reduce gap for very small screens */
     }
 }
 
 
-@media (max-width: 600px) and (orientation: landscape) {
-    .header {
-        padding: 1rem 2%;
-    }
-    .home-content h3 {
-        font-size: 2.2rem;
-    }
-    .home-content h1 {
-        font-size: 4.5rem;
-    }
-    .home-img img {
-        width: 70vw;
-    }
-    .services-container {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .contact form {
-        padding: 0.5rem;
-    }
-}
 
 
 @media(max-width: 480px) {
