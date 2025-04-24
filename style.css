@@ -181,7 +181,22 @@ span{
     box-shadow: 0 0 25px var(--main-color);
     background-color:var(--main-color);
     color: black;
-}.text-animation {
+}
+.projects-link {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.projects-link a {
+    display: inline-block;
+    flex-direction: left;
+}
+
+
+
+
+
+.text-animation {
     font-size: 34px;
     font-weight: 600;
     min-width: 280px;
@@ -334,7 +349,7 @@ span{
 }
 .services h2{
     margin-bottom: auto;
-    color: white;
+    color:black;
 }
 .services-container{
     display: grid;
@@ -367,11 +382,13 @@ span{
     justify-content: left;
     align-items: baseline;
     padding: 5rem 5rem;
+    
 }
 .service-info h4{
     font-size:3rem;
     font-weight: 800;
     line-height: 2;
+    color: black;
 }
 .service-info p{
     font-size: 1.6rem;
@@ -380,6 +397,11 @@ span{
     line-height: 1.7;
     margin: auto;
 }
+.underline-heading {
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+
 .testimonials{
     background-color: var(--background-color);
 }
