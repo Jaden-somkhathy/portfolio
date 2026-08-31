@@ -1,539 +1,248 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Gallery</title>
+    <meta name="description" content="Featured work by Jaden Somkhathy including frontend and full-stack projects and coding journey.">
+    <title>Featured Work | Jaden Somkhathy</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <link rel="stylesheet" href="gallery.css">
 </head>
 <body>
-    <header>
+
+    <header class="site-header">
         <div class="container">
-            <h1><a href="#home" class="logo">Jaden <span>Somkhathy</span></a></h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#Service">Service</a> </li>      
-                   <li><a href="index.html#contact">Contact</a>  </li>
-                </ul>
+            <a href="index.html#home" class="logo">Jaden<span>.</span></a>
+
+            <i class='bx bx-menu' id="menu-icon"></i>
+
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="index.html#services">What I Do</a>
+                <a href="index.html#contact">Contact</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <section id="projects" class="projects-section">
+        <section class="gallery-hero">
             <div class="container">
-                <h2>Featured Projects</h2>
-                
-                <div class="projects-grid">
-                    <!-- Left Column -->
-                    <div class="projects-column">
-                        <!-- Front End Project -->
-                        <div class="project-card">
-                            <div class="image-carousel">
-                                <div class="carousel-container">
-                                    <img src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Front-End Project">
-                                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Front-End Project">
-                                    <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Front-End Project">
-                                </div>
-                                <div class="carousel-nav">
-                                    <button class="prev-btn">&lt;</button>
-                                    <div class="carousel-dots"></div>
-                                    <button class="next-btn">&gt;</button>
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <span class="category">Front End Projects</span>
-                                <h3>Responsive Portfolio Website</h3>
-                                <p>A fully responsive portfolio website built with modern CSS techniques.</p>
-                                <button class="view-project-btn" data-project="front-end">View Full Project</button>
-                            </div>
-                        </div>
-                        
-                        <!-- Full Stack Project -->
-                        <div class="project-card">
-                            <div class="image-carousel">
-                                <div class="carousel-container">
-                                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Full Stack Project">
-                                    <img src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Full Stack Project">
-                                    <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Full Stack Project">
-                                </div>
-                                <div class="carousel-nav">
-                                    <button class="prev-btn">&lt;</button>
-                                    <div class="carousel-dots"></div>
-                                    <button class="next-btn">&gt;</button>
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <span class="category">Full Stack Projects & Websites</span>
-                                <h3>Restaurant Management System</h3>
-                                <p>A comprehensive system for restaurant management with ordering and inventory features.</p>
-                                <button class="view-project-btn" data-project="full-stack">View Full Project</button>
-                            </div>
-                        </div>
+                <span class="eyebrow reveal">Featured Work</span>
+                <h2 class="section-heading reveal">A closer look at what I build</h2>
+                <p class="section-lede reveal">
+                    Browse by category. Each card opens the projects milestones or
+                    credentials behind it.
+                </p>
+
+                <div class="category-grid">
+                    <div class="category-card reveal" data-category="frontend">
+                        <div class="icon"><i class='bx bx-code-block'></i></div>
+                        <h3>Frontend Projects</h3>
+                        <p>Interfaces built for clarity and responsiveness across every device.</p>
+                        <span class="explore">Explore <i class='bx bx-right-arrow-alt'></i></span>
                     </div>
-                    
-                    <!-- Right Column -->
-                    <div class="projects-column">
-                        <!-- Web Development Project -->
-                        <div class="project-card">
-                            <div class="image-carousel">
-                                <div class="carousel-container">
-                                    <img src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Web Development Project">
-                                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Web Development Project">
-                                    <img src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Web Development Project">
-                                </div>
-                                <div class="carousel-nav">
-                                    <button class="prev-btn">&lt;</button>
-                                    <div class="carousel-dots"></div>
-                                    <button class="next-btn">&gt;</button>
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <span class="category">Web Developments</span>
-                                <h3>Clinic Booking App</h3>
-                                <p>A medical clinic appointment booking system with doctor-patient communication.</p>
-                                <button class="view-project-btn" data-project="web-dev">View Full Project</button>
-                            </div>
-                        </div>
-                        
-                        <!-- Web Design Project -->
-                        <div class="project-card">
-                            <div class="image-carousel">
-                                <div class="carousel-container">
-                                    <img src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Web Design Project">
-                                    <img src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Web Design Project">
-                                    <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Web Design Project">
-                                </div>
-                                <div class="carousel-nav">
-                                    <button class="prev-btn">&lt;</button>
-                                    <div class="carousel-dots"></div>
-                                    <button class="next-btn">&gt;</button>
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <span class="category">Web Designer</span>
-                                <h3>Restaurant Branding & UI</h3>
-                                <p>Complete branding and user interface design for a high-end restaurant chain.</p>
-                                <button class="view-project-btn" data-project="web-design">View Full Project</button>
-                            </div>
-                        </div>
+
+                    <div class="category-card reveal" data-category="fullstack">
+                        <div class="icon"><i class='bx bx-server'></i></div>
+                        <h3>Full-Stack Projects</h3>
+                        <p>End to end applications with databases APIs and the UI on top.</p>
+                        <span class="explore">Explore <i class='bx bx-right-arrow-alt'></i></span>
                     </div>
-                    
-                    <!-- Full-width Cinematic Journey Card -->
-                    <div class="project-card-wide">
-                      <h3>My Journey in Coding</h3>
-                      <p>
-                          Step into my cinematic coding journey — a vibrant gallery of milestones,
-                          memories, and moments that narrate my evolution in the world of technology.
-                          From passion-fueled nights to breakthrough creations,
-                          this is where code meets creativity in a visual symphony of growth.
-                      </p>
-                      
-                      <!-- Cinematic Journey Section -->
-                      <div class="cinematic-journey">
-                          <div class="navigation-arrows">
-                              <div class="nav-arrow prev-arrow">&lt;</div>
-                              <div class="nav-arrow next-arrow">&gt;</div>
-                          </div>
-                          <div class="cinematic-container">
-                              <!-- Movie Card with Image -->
-                              <div class="movie-card">
-                                  <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Coding Journey">
-                                  <div class="movie-info">
-                                      <h4 class="movie-title">First Coding Project</h4>
-                                      <p class="movie-desc">Where it all began - my first programming challenge</p>
-                                  </div>
-                              </div>
-                              
-                              <!-- Movie Card with Video -->
-                              <div class="movie-card">
-                                  <video poster="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
-                                      <source src="https://example.com/demo-video.mp4" type="video/mp4">
-                                  </video>
-                                  <div class="play-button"></div>
-                                  <div class="movie-info">
-                                      <h4 class="movie-title">App Development</h4>
-                                      <p class="movie-desc">Creating my first mobile application</p>
-                                  </div>
-                              </div>
-                              
-                              <!-- More Movie Cards -->
-                              <div class="movie-card">
-                                  <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Web Development">
-                                  <div class="movie-info">
-                                      <h4 class="movie-title">Web Development</h4>
-                                      <p class="movie-desc">Learning the fundamentals of web technologies</p>
-                                  </div>
-                              </div>
-                              
-                              <div class="movie-card">
-                                  <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="UX/UI Design">
-                                  <div class="movie-info">
-                                      <h4 class="movie-title">UX/UI Design</h4>
-                                      <p class="movie-desc">Exploring the world of user experience design</p>
-                                  </div>
-                              </div>
-                              
-                              <div class="movie-card">
-                                  <video poster="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
-                                      <source src="https://example.com/demo-video2.mp4" type="video/mp4">
-                                  </video>
-                                  <div class="play-button"></div>
-                                  <div class="movie-info">
-                                      <h4 class="movie-title">AI Integration</h4>
-                                      <p class="movie-desc">Working with artificial intelligence</p>
-                                  </div>
-                              </div>
-                              
-                              <div class="movie-card">
-                                  <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Database Design">
-                                  <div class="movie-info">
-                                      <h4 class="movie-title">Database Design</h4>
-                                      <p class="movie-desc">Creating efficient data structures</p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      
-                      <a href="#" class="view-gallery-btn">View Full Gallery</a>
-                  </div>
-              </div>
-          </div>
-      </section>
-  </main>
+
+                    <div class="category-card reveal" data-category="journey">
+                        <div class="icon"><i class='bx bx-film'></i></div>
+                        <h3>My Coding Journey</h3>
+                        <p>Milestones, photos, and short clips from along the way.</p>
+                        <span class="explore">Explore <i class='bx bx-right-arrow-alt'></i></span>
+                    </div>
+
+                    <div class="category-card reveal" data-category="achievements">
+                        <div class="icon"><i class='bx bx-medal'></i></div>
+                        <h3>Achievements &amp; Certificates</h3>
+                        <p>Recognitions and credentials earned along the way.</p>
+                        <span class="explore">Explore <i class='bx bx-right-arrow-alt'></i></span>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Project Modal -->
-    <div id="project-modal" class="modal">
+    <!-- ============== Frontend modal ============== -->
+    <div id="modal-frontend" class="modal">
         <div class="modal-content">
             <span class="close-modal">&times;</span>
-            
             <div class="modal-header">
-                <span id="modal-category" class="category"></span>
-                <h2 id="modal-title"></h2>
+                <div class="icon"><i class='bx bx-code-block'></i></div>
+                <h2>Frontend Projects</h2>
+                <p>Interfaces built for clarity and responsiveness across every device.</p>
             </div>
-            
-            <div class="modal-carousel">
-                <div id="modal-carousel-container" class="carousel-container">
-                    <!-- Images will be inserted here by JavaScript -->
-                </div>
-                <div class="carousel-nav">
-                    <button id="modal-prev-btn" class="prev-btn">&lt;</button>
-                    <div id="modal-carousel-dots" class="carousel-dots"></div>
-                    <button id="modal-next-btn" class="next-btn">&gt;</button>
-                </div>
-            </div>
-            
-            <div class="modal-description">
-                <p id="modal-description-text"></p>
-                <div id="modal-technologies" class="technologies">
-                    <!-- Technology tags will be inserted here by JavaScript -->
-                </div>
-            </div>
-            
-            <div class="modal-links">
-                <a id="modal-live-link" href="#" target="_blank" class="btn btn-primary">View Live Project</a>
-                <a id="modal-code-link" href="#" target="_blank" class="btn btn-secondary">View Code</a>
+
+            <div class="empty-state">
+                <i class='bx bx-time-five'></i>
+                <h3>No frontend projects yet</h3>
+                <p>I'm working on my first standalone frontend project now. Check back soon.</p>
             </div>
         </div>
     </div>
 
-    <script>
-        // Project data
-        const projectData = {
-            "front-end": {
-                title: "Responsive Portfolio Website",
-                category: "Front End Projects",
-                description: "This responsive portfolio website showcases my skills and projects. It features a modern design with smooth animations, responsive layout that works across all devices, and optimized performance. The site was built with accessibility in mind and follows best practices for SEO.",
-                images: [
-                    "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-                    "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-                    "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-                ],
-                technologies: ["HTML5", "CSS3", "JavaScript", "SCSS", "Webpack"],
-                liveUrl: "https://example.com/portfolio",
-                codeUrl: "https://github.com/username/portfolio"
-            },
-            "full-stack": {
-                title: "Restaurant Management System",
-                category: "Full Stack Projects & Websites",
-                description: "This full-stack application provides restaurant owners with a complete management solution. It includes modules for menu management, order processing, inventory tracking, staff scheduling, and customer relationship management. The system also features real-time analytics and reporting to help optimize business operations.",
-                images: [
-                    "https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-                    "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-                    "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-                ],
-                technologies: ["React", "Node.js", "Express", "MongoDB", "Redux", "JWT Authentication"],
-                liveUrl: "https://example.com/restaurant-system",
-                codeUrl: "https://github.com/username/restaurant-system"
-            },
-            "web-dev": {
-                title: "Clinic Booking App",
-                category: "Web Developments",
-                description: "The Clinic Booking App streamlines the process of scheduling and managing medical appointments. Patients can easily book, reschedule or cancel appointments with their preferred doctors. The app features a secure messaging system for doctor-patient communication, automated reminders, and integration with electronic health records. It also includes an admin panel for clinic staff to manage appointments and patient information.",
-                images: [
-                    "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-                    "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-                    "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-                ],
-                technologies: ["React", "TypeScript", "Firebase", "Tailwind CSS", "React Query", "Jest"],
-                liveUrl: "https://example.com/clinic-app",
-                codeUrl: "https://github.com/username/clinic-app"
-            },
-            "web-design": {
-                title: "Restaurant Branding & UI",
-                category: "Web Designer",
-                description: "This comprehensive design project involved creating a complete brand identity and user interface for a high-end restaurant chain. The work included logo design, color palette selection, typography, iconography, and UI design for both the restaurant's website and mobile application. The design emphasizes elegance and usability, creating an engaging digital experience that reflects the restaurant's premium positioning.",
-                images: [
-                    "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-                    "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-                    "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-                ],
-                technologies: ["Figma", "Adobe XD", "Photoshop", "Illustrator", "After Effects"],
-                liveUrl: "https://example.com/restaurant-design",
-                codeUrl: null
-            }
-        };
+    <!-- ============== Full-stack modal ============== -->
+    <div id="modal-fullstack" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <div class="icon"><i class='bx bx-server'></i></div>
+                <h2>Full-Stack Projects</h2>
+                <p>Applications with real data logic and users behind the interface.</p>
+            </div>
 
-        // Initialize all carousels on the page
-        document.addEventListener('DOMContentLoaded', function() {
-            const carousels = document.querySelectorAll('.image-carousel');
-            
-            carousels.forEach(carousel => {
-                initCarousel(carousel);
-            });
-            
-            // Set up modal event listeners
-            initModal();
-        });
+            <ul class="project-list">
+                <li>
+                    <a href="project-weatherpack.html" class="project-list-item">
+                        <div>
+                            <h3>WeatherPack</h3>
+                            <p>A smart travel weather planner with a live forecast API and packing list logic. Deployed and live.</p>
+                        </div>
+                        <i class='bx bx-right-arrow-alt'></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="project-clinic-booking.html" class="project-list-item">
+                        <div>
+                            <h3>Clinic Booking App</h3>
+                            <p>A DUT coursework project that scored 98 out of 100. Deployed and in use.</p>
+                        </div>
+                        <i class='bx bx-right-arrow-alt'></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="project-restaurant-management.html" class="project-list-item">
+                        <div>
+                            <h3>Restaurant Management System</h3>
+                            <p>An ongoing client project. Not yet deployed.</p>
+                        </div>
+                        <i class='bx bx-right-arrow-alt'></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 
-        // Initialize a carousel
-        function initCarousel(carousel) {
-            const container = carousel.querySelector('.carousel-container');
-            const images = container.querySelectorAll('img');
-            const prevBtn = carousel.querySelector('.prev-btn');
-            const nextBtn = carousel.querySelector('.next-btn');
-            const dotsContainer = carousel.querySelector('.carousel-dots');
-            
-            let currentIndex = 0;
-            
-            // Create dots
-            images.forEach((_, index) => {
-                const dot = document.createElement('span');
-                dot.classList.add('dot');
-                if (index === 0) dot.classList.add('active');
-                dot.addEventListener('click', () => {
-                    goToSlide(index);
-                });
-                dotsContainer.appendChild(dot);
-            });
-            
-            // Set up navigation
-            prevBtn.addEventListener('click', () => {
-                if (currentIndex > 0) {
-                    goToSlide(currentIndex - 1);
-                } else {
-                    goToSlide(images.length - 1);
-                }
-            });
-            
-            nextBtn.addEventListener('click', () => {
-                if (currentIndex < images.length - 1) {
-                    goToSlide(currentIndex + 1);
-                } else {
-                    goToSlide(0);
-                }
-            });
-            
-            // Initial position
-            goToSlide(0);
-            
-            // Automatic slideshow
-            let slideInterval = setInterval(nextSlide, 5000);
-            
-            carousel.addEventListener('mouseenter', () => {
-                clearInterval(slideInterval);
-            });
-            
-            carousel.addEventListener('mouseleave', () => {
-                slideInterval = setInterval(nextSlide, 5000);
-            });
-            
-            function nextSlide() {
-                if (currentIndex < images.length - 1) {
-                    goToSlide(currentIndex + 1);
-                } else {
-                    goToSlide(0);
-                }
-            }
-            
-            function goToSlide(index) {
-                container.style.transform = `translateX(-${index * 100}%)`;
-                
-                // Update dots
-                const dots = dotsContainer.querySelectorAll('.dot');
-                dots.forEach((dot, i) => {
-                    dot.classList.toggle('active', i === index);
-                });
-                
-                currentIndex = index;
-            }
-        }
+    <!-- ============== Coding journey modal ============== -->
+    <div id="modal-journey" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <div class="icon"><i class='bx bx-film'></i></div>
+                <h2>My Coding Journey</h2>
+                <p>Swap these in for your own milestone photos and short clips.</p>
+            </div>
 
-        // Initialize project modal
-        function initModal() {
-            const modal = document.getElementById('project-modal');
-            const closeBtn = document.querySelector('.close-modal');
-            const viewButtons = document.querySelectorAll('.view-project-btn');
-            
-            // Close modal when clicking the close button or outside the modal
-            closeBtn.addEventListener('click', () => {
-                modal.classList.remove('open');
-                document.body.classList.remove('modal-open');
-            });
-            
-            window.addEventListener('click', (event) => {
-                if (event.target === modal) {
-                    modal.classList.remove('open');
-                    document.body.classList.remove('modal-open');
-                }
-            });
-            
-            // Open modal when clicking view project buttons
-            viewButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    const projectId = button.getAttribute('data-project');
-                    const project = projectData[projectId];
-                    
-                    if (project) {
-                        openProjectModal(project);
-                    }
-                });
-            });
-        }
+            <div class="journey-scroller">
+                <div class="journey-card">
+                    <div class="journey-thumb"><i class='bx bx-image-add'></i></div>
+                    <div class="journey-body">
+                        <h4>First Project</h4>
+                        <p>Add a photo and a line about where it began.</p>
+                    </div>
+                </div>
+                <div class="journey-card">
+                    <div class="journey-thumb"><i class='bx bx-video-plus'></i></div>
+                    <div class="journey-body">
+                        <h4>Building the Clinic App</h4>
+                        <p>Add a clip or screenshot from the build.</p>
+                    </div>
+                </div>
+                <div class="journey-card">
+                    <div class="journey-thumb"><i class='bx bx-image-add'></i></div>
+                    <div class="journey-body">
+                        <h4>Learning Full-Stack</h4>
+                        <p>Add a photo from a milestone worth remembering.</p>
+                    </div>
+                </div>
+                <div class="journey-card">
+                    <div class="journey-thumb"><i class='bx bx-image-add'></i></div>
+                    <div class="journey-body">
+                        <h4>Freelancing Begins</h4>
+                        <p>Add a photo or note from the first client project.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        // Open project modal with data
-        function openProjectModal(project) {
-            const modal = document.getElementById('project-modal');
-            const category = document.getElementById('modal-category');
-            const title = document.getElementById('modal-title');
-            const description = document.getElementById('modal-description-text');
-            const technologies = document.getElementById('modal-technologies');
-            const liveLink = document.getElementById('modal-live-link');
-            const codeLink = document.getElementById('modal-code-link');
-            const carouselContainer = document.getElementById('modal-carousel-container');
-            const carouselDots = document.getElementById('modal-carousel-dots');
-            
-            // Fill in project data
-            category.textContent = project.category;
-            title.textContent = project.title;
-            description.textContent = project.description;
-            
-            // Set up links
-            if (project.liveUrl) {
-                liveLink.href = project.liveUrl;
-                liveLink.style.display = 'inline-block';
-            } else {
-                liveLink.style.display = 'none';
-            }
-            
-            if (project.codeUrl) {
-                codeLink.href = project.codeUrl;
-                codeLink.style.display = 'inline-block';
-            } else {
-                codeLink.style.display = 'none';
-            }
-            
-            // Set up technologies
-            technologies.innerHTML = '';
-            if (project.technologies) {
-                project.technologies.forEach(tech => {
-                    const techSpan = document.createElement('span');
-                    techSpan.classList.add('tech-tag');
-                    techSpan.textContent = tech;
-                    technologies.appendChild(techSpan);
-                });
-            }
-            
-            // Set up carousel
-            carouselContainer.innerHTML = '';
-            carouselDots.innerHTML = '';
-            
-            project.images.forEach((src, index) => {
-                const img = document.createElement('img');
-                img.src = src;
-                img.alt = `${project.title} screenshot ${index + 1}`;
-                carouselContainer.appendChild(img);
-                
-                const dot = document.createElement('span');
-                dot.classList.add('dot');
-                if (index === 0) dot.classList.add('active');
-                carouselDots.appendChild(dot);
-            });
-            
-            // Initialize modal carousel
-            const modalCarousel = document.querySelector('.modal-carousel');
-            initCarousel(modalCarousel);
-            
-            // Open modal
-            modal.classList.add('open');
-            document.body.classList.add('modal-open');
+    <!-- ============== Achievements modal ============== -->
+    <div id="modal-achievements" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <div class="icon"><i class='bx bx-medal'></i></div>
+                <h2>Achievements &amp; Certificates</h2>
+                <p>Recognitions and credentials plus a folder of certificates you can open.</p>
+            </div>
 
-            
-        }
-      
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="icon"><i class='bx bx-trophy'></i></div>
+                    <div>
+                        <h4>Clinic Booking System: 98/100</h4>
+                        <span>Durban University of Technology · Coursework</span>
+                    </div>
+                </div>
+            </div>
 
-      // Initialize cinematic journey slider
-      function initCinematicJourney() {
-          const container = document.querySelector('.cinematic-container');
-          const prevArrow = document.querySelector('.prev-arrow');
-          const nextArrow = document.querySelector('.next-arrow');
-          
-          if (!container || !prevArrow || !nextArrow) return;
-          
-          prevArrow.addEventListener('click', () => {
-              container.scrollBy({ left: -330, behavior: 'smooth' });
-          });
-          
-          nextArrow.addEventListener('click', () => {
-              container.scrollBy({ left: 330, behavior: 'smooth' });
-          });
-      }
+            <div class="folder" id="cert-folder">
+                <button type="button" class="folder-trigger" id="folder-trigger" aria-expanded="false" aria-controls="folder-contents">
+                    <div class="folder-icon">
+                        <i class='bx bxs-folder'></i>
+                    </div>
+                    <div class="folder-label">
+                        <h3>Certificates</h3>
+                        <span id="cert-count">Loading</span>
+                    </div>
+                    <i class='bx bx-chevron-down folder-chevron'></i>
+                </button>
 
-      // Setup video players
-      function setupVideoPlayers() {
-          const movieCards = document.querySelectorAll('.movie-card');
-          
-          movieCards.forEach(card => {
-              const video = card.querySelector('video');
-              const playButton = card.querySelector('.play-button');
-              
-              if (video && playButton) {
-                  playButton.addEventListener('click', (e) => {
-                      e.stopPropagation();
-                      if (video.paused) {
-                          video.play();
-                          playButton.style.opacity = 0;
-                      } else {
-                          video.pause();
-                          playButton.style.opacity = 1;
-                      }
-                  });
-                  
-                  video.addEventListener('ended', () => {
-                      playButton.style.opacity = 1;
-                  });
-              }
-          });
-      }
-  </script>
-</body>
-</html>
-    
+                <div class="folder-contents" id="folder-contents">
+                    <div class="certificates-grid" id="certificates-grid">
+                        <!-- populated from the certList array in gallery.js -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============== Certificate lightbox ============== -->
+    <div id="cert-lightbox" class="cert-lightbox">
+        <span class="close-modal cert-lightbox-close">&times;</span>
+        <button type="button" class="cert-nav cert-prev" aria-label="Previous certificate"><i class='bx bx-chevron-left'></i></button>
+        <figure class="cert-lightbox-figure">
+            <iframe id="cert-lightbox-frame" title="Certificate PDF"></iframe>
+            <figcaption>
+                <h4 id="cert-lightbox-title"></h4>
+                <span id="cert-lightbox-meta"></span>
+                <a id="cert-lightbox-open" href="#" target="_blank" class="cert-open-link">Open in new tab <i class='bx bx-link-external'></i></a>
+            </figcaption>
+        </figure>
+        <button type="button" class="cert-nav cert-next" aria-label="Next certificate"><i class='bx bx-chevron-right'></i></button>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-social">
+                <a href="https://github.com/Jaden-Somkhathy" target="_blank" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                <a href="https://linkedin.com/in/jaden-somkhathy" target="_blank" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://twitter.com/Ivyjade_203" target="_blank" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+            </div>
+            <p class="footer-copyright">&copy; 2026 Jaden Somkhathy. All rights reserved. <a href="LICENSE.md" class="license-link">License</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="gallery.js"></script>
 </body>
 </html>

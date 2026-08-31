@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WeatherPack: a smart travel weather planner by Jaden Somkhathy that turns a forecast into a packing list.">
+    <title>WeatherPack | Jaden Somkhathy</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html#home" class="logo">Jaden<span>.</span></a>
+
+            <i class='bx bx-menu' id="menu-icon"></i>
+
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Work</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="project-hero">
+            <div class="container">
+                <a href="gallery.html" class="back-link"><i class='bx bx-left-arrow-alt'></i> Back to Work</a>
+
+                <div class="icon"><i class='bx bx-cloud'></i></div>
+                <span class="status-tag is-live">Live</span>
+
+                <h1>WeatherPack</h1>
+                <p class="project-summary">
+                    A full-stack smart travel weather planner. Type in a destination and it
+                    pulls the live forecast through a backend API then turns that into a
+                    packing list based on the conditions and what you're actually doing
+                    there. Sightseeing. A meeting. Or something outdoors.
+                </p>
+
+                <div class="project-links">
+                    <a href="https://jaden-somkhathy.github.io/smart-travel-weather-planner/" target="_blank" class="btn btn-primary">View Live Site</a>
+                    <a href="https://github.com/Jaden-Somkhathy/smart-travel-weather-planner" target="_blank" class="btn btn-ghost">View Code</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-body">
+            <div class="container">
+                <h2>The problem</h2>
+                <p>
+                    Travellers usually check the weather and pack separately, then still get
+                    it wrong. WeatherPack answers one question before a trip. What does the
+                    sky look like where you're going, and what should you bring for it.
+                </p>
+
+                <h2>What it does</h2>
+                <ul>
+                    <li>Pulls the live forecast for any destination through a FastAPI backend</li>
+                    <li>Lets you set the trip type: sightseeing, business, or outdoor and hiking</li>
+                    <li>Generates a packing list based on the forecast and trip type</li>
+                </ul>
+
+                <h2>Tech stack</h2>
+                <div class="technologies">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">FastAPI</span>
+                    <span class="tech-tag">OpenWeatherMap API</span>
+                </div>
+
+                <h2>Result</h2>
+                <p>
+                    Deployed and live. Built to stay fast and easy to read rather than to
+                    lean on a heavy framework.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-social">
+                <a href="https://github.com/Jaden-Somkhathy" target="_blank" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                <a href="https://linkedin.com/in/jaden-somkhathy" target="_blank" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://twitter.com/Ivyjade_203" target="_blank" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+            </div>
+            <p class="footer-copyright">&copy; 2026 Jaden Somkhathy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

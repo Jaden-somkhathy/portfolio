@@ -2,324 +2,322 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" 
-    content="width=device-width, initial-scale=1.0">
-    <title>Responsite portfolio website</title>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <meta charset="UTF-8">
-<meta name="description" content="Jaden's portfolio showcasing web development, software development, and game creation projects.">
-<meta name="keywords" content="Jaden, portfolio, web development, software development, game creation, Durban University of Technology">
-<meta name="author" content="Sboniso Vilakazi">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jaden's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jaden Somkhathy is a software developer specialising in full-stack web applications based in Durban South Africa.">
+    <meta name="keywords" content="Jaden Somkhathy software developer full-stack developer web development Durban University of Technology">
+    <meta name="author" content="Jaden Somkhathy">
+    <title>Jaden Somkhathy | Software Developer</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-     <header class="header">
-        <a href="#home" class="logo">Jaden
-        <span>Somkhathy</span></a>
+    <header class="site-header">
+        <div class="container">
+            <a href="#home" class="logo">Jaden<span>.</span></a>
 
-        <i class='bx bx-menu'id="menu-icon" ></i>
+            <i class='bx bx-menu' id="menu-icon"></i>
 
-        <nav class="navbar">
-           <a href="#home" class="active">Home</a> 
-            <a href="#Education">Education</a>
-            <a href="#Service">Service</a>   
-            <a href="#testimonials">Testimonials</a>   
-            <a href="#contact">Contact</a>      
-        </nav> 
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">What I Do</a>
+                <a href="#testimonials">Recommendations</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
 
     <section class="home" id="home">
-        <div class ="home-content">
-            <h1>Hi,i'm <span>Jaden</span></h1>
-            
-            <h3 class="text-animation"> I'm a <span></span></h3>  
+        <canvas id="topology-canvas"></canvas>
 
+        <div class="container">
+            <div class="home-content reveal">
+                <span class="eyebrow">Available for opportunities</span>
+                <h1>Jaden Somkhathy</h1>
+                <h3 class="text-animation">I build for the web as a <span></span></h3>
 
-            <p>Hello, I’m Sboniso Vilakazi, better known as Jaden .
-                 I’m a passionate and innovative IT student currently studying at the Durban University of Technology
-                 ,currently pursuing my degree in Bachelor' Information and Communication Technology .i am doing my third year this year. 
-                 My journey in technology has been driven by a strong curiosity and a relentless desire to create and innovate.
+                <p>
+                    I'm a final-year ICT student at Durban University of Technology and a
+                    full-stack developer. I built a clinic booking platform for DUT that scored
+                    98 out of 100. I'm now building a restaurant management system for a private
+                    client. I care about clean architecture. I write readable code. And I build
+                    interfaces people actually enjoy using.
                 </p>
-               
+
+                <div class="btn-group">
+                    <a href="gallery.html" class="btn btn-primary">
+                        <i class='bx bx-grid-alt'></i> View My Work
+                    </a>
+                    <a href="resume.pdf" download class="btn btn-ghost">
+                        <i class='bx bx-download'></i> Download Resume
+                    </a>
+                    <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+                </div>
+
                 <div class="social-icons">
-                    <a href="https://twitter.com/Ivyjade_203" target="_blank" aria-label="Twitter">
-                        <i class='bx bxl-twitter'></i>
-                    </a>
-                   
-                    <a href="https://wa.me/27655197203?text=Hi%20Jaden%2C%20I%20saw%20your%20portfolio!" target="_blank" aria-label="WhatsApp Chat">
-                        <i class='bx bxl-whatsapp'></i>
-                    </a>
-                    
-                    
-                    
-                    <a href="https://instagram.com/ivyjade_203" target="_blank" aria-label="Instagram">
-                        <i class='bx bxl-instagram'></i>
-                    </a>
                     <a href="https://github.com/Jaden-Somkhathy" target="_blank" aria-label="GitHub">
                         <i class='bx bxl-github'></i>
                     </a>
-                </div> 
-
-                <div class="btn-group">
-                  
-                    <a href="#contact"
-                    class="btn">Contact</a>  
+                    <a href="https://linkedin.com/in/jaden-somkhathy" target="_blank" aria-label="LinkedIn">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="https://twitter.com/Ivyjade_203" target="_blank" aria-label="Twitter">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+                    <a href="https://instagram.com/ivyjade_203" target="_blank" aria-label="Instagram">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
                 </div>
-
-                <div class="projects-link">
-                    <a href="gallery.html" class="btn">Click here to view my projects</a>
-                </div>
-                
             </div>
-                <div class="home-img">
-                    <img src="images/formal1.jpg" alt="">
-                </div>
 
+            <div class="home-img reveal">
+                <div class="ring">
+                    <img src="images/formal1.jpg" alt="Portrait of Jaden Somkhathy">
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="education" id="Education">
-        <h2 class="heading">Education</h2>
 
-        <div class="timeline-items">
+    <section class="about" id="about">
+        <div class="container">
+            <span class="eyebrow reveal">About</span>
+            <h2 class="section-heading reveal">Background &amp; education</h2>
+            <p class="section-lede reveal">
+                A quick look at where I've come from and what I'm working on right now.
+            </p>
 
-        <div class="timeline-item">
-            <div class="timeline-dot"></div>
-                <div class="timeline-date">2022</div>
-                <div class="timeline-content">
-                    <h3>High School</h3>
-                    <p>Phendukani Full Service High School</p>
+            <div class="about-grid">
+                <div class="about-summary reveal">
+                    <p>
+                        I'm based in Durban South Africa. I'm completing a Bachelor's degree in
+                        Information &amp; Communication Technology at Durban University of
+                        Technology. My expected graduation year is 2027.
+                    </p>
+                    <p>
+                        Outside of coursework I take on real client work to keep learning by
+                        shipping. My projects range from healthcare booking systems to restaurant
+                        management software. I'm always looking for the next problem worth solving.
+                    </p>
                 </div>
-    
+
+                <div class="timeline reveal">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2022</div>
+                        <div class="timeline-content">
+                            <h3>High School</h3>
+                            <p>Phendukani Full Service High School</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2023 to Present</div>
+                        <div class="timeline-content">
+                            <h3>BSc, Information &amp; Communication Technology</h3>
+                            <p>Durban University of Technology · Expected graduation 2027</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Since 2024</div>
+                        <div class="timeline-content">
+                            <h3>Freelance Software Developer</h3>
+                            <p>Designing and building a restaurant management system for a private client</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="timeline-item">
-            <div class="timeline-dot"></div>
-                <div class="timeline-date">2023</div>
-                <div class="timeline-content">
-                    <h3>University</h3>
-                    <p>Enrolled at Durban University of Technology in 2023 for a degree in Bachelor's Information and Communication technology and my expected graduatiomn year is 2027 </p>
+    <section class="services" id="services">
+        <div class="container">
+            <span class="eyebrow reveal">What I Do</span>
+            <h2 class="section-heading reveal">Where I add the most value</h2>
+            <p class="section-lede reveal">
+                Three areas I keep coming back to across every project I take on.
+            </p>
 
+            <div class="services-container">
+                <div class="services-box reveal">
+                    <div class="icon"><i class='bx bx-code-alt'></i></div>
+                    <h3>Full-Stack Development</h3>
+                    <p>
+                        Building complete web applications end to end. That covers data models
+                        and APIs as well as the interface people interact with. My DUT
+                        clinic booking platform is the clearest example. It scored 98 out of 100
+                        for solving a real scheduling problem for the university.
+                    </p>
                 </div>
 
-               
-        </div>
-    </div>
-</section>
+                <div class="services-box reveal">
+                    <div class="icon"><i class='bx bx-layout'></i></div>
+                    <h3>Frontend Engineering</h3>
+                    <p>
+                        Turning designs into interfaces that are responsive accessible and fast.
+                        I pay attention to the small interaction details that make a product feel
+                        considered rather than assembled.
+                    </p>
+                </div>
 
-    <section class="services" id="Service">
-        <h2 class="heading">Service</h2>
-
-        <div class="services-container">
-            <div class="services-box">
-                <h1 class="underline-heading"> web developer</h1>
-
-
-                <p><h3>As a web developer, I have honed my skills in creating functional and innovative digital solutions.
-                     One notable project was a problem-solving system developed for DUT, which achieved an impressive 98% out of 100.
-                      This system, designed as a school clinic booking platform, showcased my ability to address real-world problems
-                       through effective coding and development practices.</h3></p>
-
-
-                <p><h3>Currently, I am applying my expertise to develop a customized restaurant management system for a client
-                    who recognized my skills and offered me the opportunity.
-                     This ongoing project highlights my commitment to delivering high-quality, client-focused solutions.
-                </h2></p>    
-            </div>
-            <div class="services-box">
-                <h1 class="underline-heading"> front-end designer</h1>
-
-
-
-                <p><h3>In my role as a front-end designer, 
-                    I focus on creating visually appealing and user-friendly interfaces that enhance the overall user experience.
-                     My approach combines a strong understanding of design principles with proficiency in HTML, CSS, and JavaScript.
-                      My recent work includes developing a user-centric school clinic booking system for DUT,
-                       which received high praise for its intuitive design and functionality. Additionally, 
-                       I am working on a restaurant management system that emphasizes clean design and seamless interaction
-                        reflecting my dedication to creating effective and engaging digital experiences.</h3>
-                </p>
-            </div>
-    
-            <div class="services-box">
-             <h1 class="underline-heading"> web designer</h1>
-
-                <p><h3>As a web designer, I excel in crafting aesthetically pleasing and functional websites 
-                    that align with clients' needs and brand identities.
-                     My recent projects include a highly-rated school clinic booking system for DUT, 
-                     which was recognized for its excellent design and usability.
-                      I am also in the process of designing a restaurant website for a client who appreciated my design capabilities.
-                       This project is a testament to my ability to blend visual appeal with practical functionality,
-                        ensuring that each website I create not only looks great but also serves its intended purpose effectively.</h3>
-                </p>
+                <div class="services-box reveal">
+                    <div class="icon"><i class='bx bx-pen'></i></div>
+                    <h3>Product &amp; UI Design</h3>
+                    <p>
+                        Before I write code I think through how a screen should work. That habit
+                        shapes every layout I build. It's part of the ongoing UI and brand work
+                        I'm doing for a restaurant client.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="testimonials" id="testimonials">
-        <div class="testimonials-box">
-            <h2 class="heading">Testimonials</h2>
-        
-            <div class="wrapper">
-                 <div class="testimonials-item">
-                      <img src="images\broe.jpg" alt="">
-                      <h2>Luyanda Kubheka</h2>
-                      <div class=" rating">
+        <div class="container">
+            <span class="eyebrow reveal">Recommendations</span>
+            <h2 class="section-heading reveal">What people I've worked with say</h2>
+            <p class="section-lede reveal">
+                A few words from people who've seen me build.
+            </p>
 
-                    
-                <i class='bx bxs-star'
-                 id="star"> </i>
-                <i class='bx bxs-star' 
-                id="star"> </i>
-                <i class='bx bxs-star' 
-                id="star"> </i>
-                <i class='bx bxs-star' 
-                id="star"> </i>
-                <i class='bx bxs-star'
-                 id="star"> </i>
-            </div>
-            <p>we currently working on a project together and the skills he has are amazing,
-                we are brothers and we even became broCoders because him and me together we produce something big .
-                 i've seen some projects he created and i got to say he's really good.</p>
-        </div>
-        
-        <div class="testimonials-item">
-            <img src="images\BUKEKA.jpg" alt="">
-            <h2>Bukeka Nxumalo</h2>
-            <div class=" rating">
-                <i class='bx bxs-star' 
-                id="star"> </i>
-                <i class='bx bxs-star' 
-                id="star"> </i>
-                <i class='bx bxs-star' 
-                id="star"> </i>
-                <i class='bx bxs-star' 
-                id="star"> </i>
-                <i class='bx bxs-star'
-                 id="star"> </i>
-            </div>
-            <p>We go to the same class, and I've always admired his passion.
-                 He's someone who consistently strives to learn and uncover the unknown,
-                  which is exactly what an IT professional in our field needs.
-                   He's one of the most active and engaged individuals I've met, 
-                   always pushing himself to grow and excel.
-
-                I have no doubt that he will work beyond expectations,
-                 as his dedication and enthusiasm for programming are truly inspiring. 
-                 I wish him nothing but the best of luck on his journey. With his drive and commitment,
-                  I know he'll achieve remarkable things. 
-                  Keep pushing forward, and continue to let your passion guide you!
-                
-                </p>
-            </div>
-
-            <div class="testimonials-item">
-                <img src="images\dad .jpg" alt="">
-                <h2>Mr Kubheka</h2>
-                <div class=" rating">
-                    <i class='bx bxs-star' 
-                    id="star"> </i>
-                    <i class='bx bxs-star' 
-                    id="star"> </i>
-                    <i class='bx bxs-star' 
-                    id="star"> </i>
-                    <i class='bx bxs-star' 
-                    id="star"> </i>
-                    <i class='bx bxs-star'
-                     id="star"> </i>
+            <div class="testimonials-wrapper">
+                <div class="testimonial-card reveal">
+                    <div class="quote-mark">"</div>
+                    <p>
+                        We're currently working on a project together and the skill level is
+                        genuinely impressive. I've seen the projects he's built and the quality
+                        speaks for itself.
+                    </p>
+                    <div class="testimonial-person">
+                        <img src="images/broe.jpg" alt="Luyanda Kubheka">
+                        <div>
+                            <h4>Luyanda Kubheka</h4>
+                            <span>Collaborator</span>
+                        </div>
+                    </div>
                 </div>
-                <p>As Jaden's dad, I'm proud to share my testimonial about his journey in programming.
-                 Although Sboniso initially studied science, he chose to pursue IT at DUT, and I supported his decision wholeheartedly.
-                Despite facing challenges due to limited high school exposure, Jaden's dedication and hard work,
-                 including studying coding during holidays, have led to impressive progress. His first project was remarkable,
-                  showcasing his growth and commitment. I am confident in Jaden's potential and recommend partnering with him on projects,
-                   as I believe he will exceed expectations.
-                 </p>
+
+                <div class="testimonial-card reveal">
+                    <div class="quote-mark">"</div>
+                    <p>
+                        We're in the same class and I've always admired his drive. He's one of
+                        the most engaged people I know. He's always pushing to learn more and go
+                        beyond what's expected.
+                    </p>
+                    <div class="testimonial-person">
+                        <img src="images/BUKEKA.jpg" alt="Bukeka Nxumalo">
+                        <div>
+                            <h4>Bukeka Nxumalo</h4>
+                            <span>Classmate at DUT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card reveal">
+                    <div class="quote-mark">"</div>
+                    <p>
+                        Watching Jaden's progress has been remarkable. He's self-taught during
+                        school holidays and now produces work I'd confidently recommend to
+                        anyone looking to partner with him.
+                    </p>
+                    <div class="testimonial-person">
+                        <img src="images/dad .jpg" alt="Mr Kubheka">
+                        <div>
+                            <h4>Mr Kubheka</h4>
+                            <span>Mentor</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-    <section>
+    </section>
 
     <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
+        <div class="container">
+            <span class="eyebrow reveal">Contact</span>
+            <h2 class="section-heading reveal">Let's connect</h2>
+            <p class="section-lede reveal">
+                Have a role in mind? A freelance project? Or just an idea? I'd like to hear about it.
+            </p>
 
-        <form action="https://formspree.io/f/mqazyejb" method="POST">
-            <div class="input-group">
-                <div class="input-box">
-                    <input type="text" name="Full Name"
-                    placeholder="Full name" required>
-                    <input type="email"  name="Email"
-                    placeholder="Email" required>
+            <div class="contact-grid">
+                <div class="contact-intro reveal">
+                    <p>
+                        Whether it's a full-time opportunity or freelance work or just a
+                        technical question I usually reply within a day or two.
+                    </p>
+
+                    <div class="contact-detail">
+                        <div class="icon"><i class='bx bx-envelope'></i></div>
+                        <div>
+                            <h4>Email</h4>
+                            <span>your.email@example.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail">
+                        <div class="icon"><i class='bx bxl-whatsapp'></i></div>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <span>+27 65 519 7203</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail">
+                        <div class="icon"><i class='bx bx-map'></i></div>
+                        <div>
+                            <h4>Location</h4>
+                            <span>Durban, South Africa</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="input-box">
-                    <input type="number"  name="Phone number"
-                    placeholder="Phone Number" required>
-                    <input type="text"
-                    placeholder="Subject" required> 
-                </div>
+
+                <form action="https://formspree.io/f/mqazyejb" method="POST" class="reveal">
+                    <div class="input-row">
+                        <input type="text" name="Full Name" placeholder="Full name" required>
+                        <input type="email" name="Email" placeholder="Email" required>
+                    </div>
+                    <div class="input-row">
+                        <input type="tel" name="Phone number" placeholder="Phone number">
+                        <input type="text" name="Subject" placeholder="Subject" required>
+                    </div>
+                    <textarea name="Message" rows="6" placeholder="Your message" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
             </div>
-
-            <div class="input-group-2">
-                   <textarea name="Message"cols="30"
-                   rows="10" placeholder="Your Message" required></textarea>
-                   <input type="Submit" value="Send Message" class="btn">
-             </div>
-        </form>
+        </div>
     </section>
 
-    <footer class="footer">
-            <div class="social">
-                <a href="https://twitter.com/Ivyjade_203" target="_blank" aria-label="Twitter">
-                    <i class='bx bxl-twitter'></i>
-                </a>
-                <a href="https://linkedin.com/in/jaden Somkhathy" target="_blank" aria-label="LinkedIn">
-                    <i class='bx bxl-linkedin'></i>
-                </a>
-                <a href="https://instagram.com/ivyjade_203" target="_blank" aria-label="Instagram">
-                    <i class='bx bxl-instagram'></i>
-                </a>
-                <a href="https://github.com/Jaden-Somkhathy" target="_blank" aria-label="GitHub">
-                    <i class='bx bxl-github'></i>
-                </a>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-social">
+                <a href="https://github.com/Jaden-Somkhathy" target="_blank" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                <a href="https://linkedin.com/in/jaden-somkhathy" target="_blank" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://twitter.com/Ivyjade_203" target="_blank" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+                <a href="https://instagram.com/ivyjade_203" target="_blank" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
             </div>
 
-            <ul class="list">
-                <li>
-                    <a href="#">FAQ</a>
-                </li>
-
-                <li>
-                    <a href="#">services</a>
-                </li>
-
-                <li>
-                    <a href="#">About Me</a>
-                </li>
-
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-
-                <li>
-                    <a href="#">Testimonials</a>
-                </li>
+            <ul class="footer-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">What I Do</a></li>
+                <li><a href="gallery.html">Projects</a></li>
+                <li><a href="#testimonials">Recommendations</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-            <p class="copyright">
-                <p>&copy; 2024| Jaden Sboniso Somkhathy | All rights reserved.</p>
-            </p>
+
+            <p class="footer-copyright">&copy; 2026 Jaden Somkhathy. All rights reserved. <a href="LICENSE.md" class="license-link">License</a></p>
+        </div>
     </footer>
 
-    </section>
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init("YOUR_USER_ID");  // Replace "YOUR_USER_ID" with your actual EmailJS User ID
-        })();
-    </script>
-    
-    
+    <script src="script.js"></script>
 </body>
 </html>
